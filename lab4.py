@@ -7,7 +7,7 @@ def max_length(length, heigths):
             return 0 
         first_number = heigths[0]
         heigths.pop(0)
-        return sqrt(((first_number - heigths[0]) * (-1)) * ((first_number - heigths[0]) * (-1)) + length ** 2) + max_length(length, heigths)
+        return sqrt(((first_number - heigths[0]) * (-1)) * ((first_number - heigths[0]) * (-1)) + length * length) + max_length(length, heigths)
 
 
-print("{:.2f}".format(max_length(2, [3, 1 , 3])))
+print("{:.2f}".format(max_length(2, [3, 1, 3])))
